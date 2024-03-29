@@ -1,7 +1,7 @@
 Part-A (15-20 Minutes): 
 
 1. How many total combinations are possible? Show the math along with the code!
-   
+
 Explanation:
 •	First, The value of each face of Die A is stored in a list.
 •	Second, The value of each face of Die B is stored in another list. 
@@ -30,20 +30,20 @@ Part-B (25-30 Minutes):
 
 Question:
 Now comes the real challenge. You were happily spending a lazy afternoon playing your board game with your dice when suddenly the mischievous Norse God Loki (You love Thor too much & Loki didn’t like that much) appeared. Loki dooms your dice for his fun removing all the “Spots” off the dice.
- 
+
 No problem! You have the tools to re-attach the “Spots” back on the Dice. 
 However, Loki has doomed your dice with the following conditions: 
 ● Die A cannot have more than 4 Spots on a face. 
 ● Die A may have multiple faces with the same number of spots.
 ● Die B can have as many spots on a face as necessary i.e. even more than 6. 
 But in order to play your game, the probability of obtaining the Sums must remain the same!
- So if you could only roll P(Sum = 2) = 1/X, the new dice must have the spots reattached such that those probabilities are not changed. 
+So if you could only roll P(Sum = 2) = 1/X, the new dice must have the spots reattached such that those probabilities are not changed. 
 
 Input: 
 ● Die_A = [1, 2, 3, 4, 5, 6] & Die B = Die_A = [1, 2, 3, 4, 5, 6]
- Output: 
+Output: 
 ● A Transform Function undoom_dice that takes (Die_A, Die_B) as input & outputs New_Die_A = [?, ?, ?, ?, ?, ?],New_Die_B = [?, ?, ?, ?, ?, ?] where,
- ● No New_Die A[x] > 4
+● No New_Die A[x] > 4
 
 Explanation:
 •	A list 1,2,3,4 is taken as "initial_elements" since No New_Die A[x] > 4. For the rest 2 elements the combinations library is used to find the possible extra elements in range of 1 to 4 and they are combined with the “initial_elements” to form the possible combinations for New_Die A. The combinations are stored in list "all_possible_die_A".
